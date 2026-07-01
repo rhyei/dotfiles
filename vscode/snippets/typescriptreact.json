@@ -1,0 +1,50 @@
+{
+  "Import CSS Module": {
+    "prefix": ["imcss"],
+    "body": ["import styles from './${TM_FILENAME_BASE}.module.css'"]
+  },
+
+  "React Component": {
+    "prefix": ["rfc"],
+    "body": [
+      "export function ${TM_FILENAME_BASE/^(.*)$/${1:/pascalcase}/}() {",
+      "  return <div>$0</div>",
+      "}"
+    ]
+  },
+
+  "React Component with Props": {
+    "prefix": ["rfcp"],
+    "body": [
+      "interface ${TM_FILENAME_BASE/^(.*)$/${1:/pascalcase}/}Props {",
+      "  $1",
+      "}",
+      "",
+      "export function ${TM_FILENAME_BASE/^(.*)$/${1:/pascalcase}/}({ $2 }: ${TM_FILENAME_BASE/^(.*)$/${1:/pascalcase}/}Props) {",
+      "  return <div>$3</div>",
+      "}"
+    ]
+  },
+
+  "React Arrow Component": {
+    "prefix": ["rac"],
+    "body": [
+      "export const ${TM_FILENAME_BASE/^(.*)$/${1:/pascalcase}/} = () => {",
+      "  return <div>$0</div>",
+      "}"
+    ]
+  },
+
+  "React Arrow Component with Props": {
+    "prefix": ["racp"],
+    "body": [
+      "interface ${TM_FILENAME_BASE/^(.*)$/${1:/pascalcase}/}Props {",
+      "  $1",
+      "}",
+      "",
+      "export const ${TM_FILENAME_BASE/^(.*)$/${1:/pascalcase}/} = ({ $2 }: ${TM_FILENAME_BASE/^(.*)$/${1:/pascalcase}/}Props) => {",
+      "  return <div>$3</div>",
+      "}"
+    ]
+  },
+}

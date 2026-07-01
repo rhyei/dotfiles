@@ -1,0 +1,34 @@
+{
+  "import css module": {
+    "prefix": "icss",
+    "body": ["import styles from './$1.module.css'"],
+  },
+  "react functional component": {
+    "prefix": "rfc",
+    "body": [
+      "export function $1() {",
+      "  return (",
+      "    <div>",
+      "      $0",
+      "    </div>",
+      "  )",
+      "}"
+    ],
+  },
+  "React Functional Component with Props": {
+    "prefix": "rfcp",
+    "body": [
+      "export interface $1Props {",
+      "  $2",
+      "}",
+      "",
+      "export function $1({ $3 }: $1Props) {",
+      "  return (",
+      "    <div>",
+      "      $0",
+      "    </div>",
+      "  )",
+      "}"
+    ],
+  }
+}

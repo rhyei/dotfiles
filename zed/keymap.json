@@ -1,0 +1,101 @@
+[
+  {
+    "context": "!ContextEditor && !AcpThread > Editor && mode == full",
+    "unbind": {
+      "ctrl-shift-e": "pane::RevealInProjectPanel"
+    }
+  },
+  {
+    "context": "AcpThread > Editor",
+    "unbind": {
+      "ctrl-shift-r": "agent::OpenAgentDiff"
+    }
+  },
+  {
+    "context": "AgentPanel",
+    "unbind": {
+      "ctrl-shift-e": "project_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-shift-c": "editor::GoToDefinition"
+    }
+  },
+  {
+    "context": "Editor && editor_agent_diff",
+    "unbind": {
+      "ctrl-shift-r": "agent::OpenAgentDiff"
+    }
+  },
+  {
+    "context": "NotebookEditor",
+    "unbind": {
+      "ctrl-shift-r": "notebook::RestartKernel"
+    }
+  },
+  {
+    "context": "NotebookEditor > Editor",
+    "unbind": {
+      "ctrl-shift-r": "notebook::RestartKernel"
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "unbind": {
+      "space": "project_panel::Open"
+    }
+  },
+  {
+    "context": "SettingsWindow",
+    "unbind": {
+      "ctrl-shift-e": "settings_editor::ToggleFocusNav"
+    }
+  },
+  {
+    "context": "Terminal",
+    "unbind": {
+      "ctrl-shift-r": "terminal::RerunTask"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-shift-e": "project_panel::Toggle",
+      "ctrl-shift-r": "agent::Toggle"
+    },
+    "unbind": {
+      "ctrl-b": "workspace::ToggleLeftDock"
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-shift-r": [
+        "task::Rerun",
+        {
+          "reevaluate_context": false
+        }
+      ]
+    }
+  },
+  {
+    "context": "AcpThread > Editor && use_modifier_to_send",
+    "unbind": {
+      "ctrl-enter": "agent::Chat"
+    }
+  },
+  {
+    "context": "AcpThread > Editor",
+    "unbind": {
+      "ctrl-enter": "agent::ChatWithFollow"
+    }
+  },
+  {
+    "context": "!AcpThread > Editor && mode == full",
+    "unbind": {
+      "ctrl-enter": "assistant::InlineAssist"
+    }
+  }
+]

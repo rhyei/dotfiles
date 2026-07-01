@@ -1,0 +1,85 @@
+{
+  "window.titleBarStyle": "custom",
+  "window.zoomLevel": 1,
+  "window.commandCenter": false,
+  "window.confirmBeforeClose": "keyboardOnly",
+  "window.density.editorTabHeight": "compact",
+  "workbench.colorTheme": "August - Gruvbox",
+  "workbench.iconTheme": "flow-deep",
+  "workbench.activityBar.location": "hidden",
+  "workbench.statusBar.visible": true,
+  "workbench.layoutControl.enabled": false,
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.editor.tabActionCloseVisibility": false,
+  "workbench.editor.tabSizing": "shrink",
+  "breadcrumbs.enabled": false,
+  "security.workspace.trust.banner": "never",
+
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontSize": 16,
+  "editor.fontWeight": "600",
+  "editor.lineHeight": 0,
+  "editor.fontLigatures": false,
+
+  "editor.cursorStyle": "block",
+  "editor.cursorBlinking": "blink",
+  "editor.cursorSmoothCaretAnimation": "off",
+  "editor.cursorWidth": 2,
+  "editor.renderLineHighlight": "none",
+  "editor.roundedSelection": false,
+  "editor.selectionHighlight": false,
+
+  "editor.lineNumbers": "off",
+  "editor.minimap.enabled": false,
+  "editor.glyphMargin": false,
+  "editor.lightbulb.enabled": "off",
+  "editor.renderWhitespace": "none",
+  "editor.renderControlCharacters": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.overviewRulerBorder": false,
+  "editor.bracketPairColorization.enabled": false,
+  "editor.guides.bracketPairs": false,
+  "editor.guides.indentation": false,
+  "editor.stickyScroll.enabled": false,
+  "editor.folding": false,
+
+  "editor.scrollbar.vertical": "visible",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 120,
+  "editor.wrappingIndent": "same",
+  "editor.scrollBeyondLastLine": true,
+
+  "explorer.compactFolders": false,
+
+  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "terminal.integrated.fontWeight": "600",
+  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.initialHint": false,
+
+  "workbench.editor.showTabs": "multiple",
+  "workbench.editor.showIcons": false,
+
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.formatOnSave": false,
+  "editor.tabSize": 2,
+
+  "files.exclude": {
+    "**/.git": true,
+    "**/.tanstack": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/bun.lock": true,
+    "**/pnpm-lock.yaml": true,
+    "**/routeTree.gen.ts": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true
+  }
+}
