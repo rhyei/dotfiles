@@ -24,9 +24,11 @@ eval "$(zoxide init zsh --cmd cd)"
 bindkey "^[[1;5D" backward-word
 bindkey "^[[1;5C" forward-word
 
+alias ga='git add .'
 alias gs='git status'
 alias gp='git push'
 alias gcm='git commit -m'
 alias gd='git diff HEAD'
 alias e='eza'
+alias ls='eza'
 alias z="zed"
