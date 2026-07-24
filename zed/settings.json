@@ -1,9 +1,13 @@
 {
+  "disable_ai": true,
+  "buffer_line_height": {
+    "custom": 1.59
+  },
   "cli_default_open_behavior": "new_window",
   "theme": {
     "mode": "dark",
     "light": "Gruvbox Light Soft",
-    "dark": "Gruvbox"
+    "dark": "Gruvbox (blur)"
   },
   "icon_theme": {
     "mode": "dark",
@@ -45,7 +49,7 @@
   "soft_wrap": "editor_width",
   "show_wrap_guides": false,
   "multi_cursor_modifier": "cmd_or_ctrl",
-  "format_on_save": "off",
+  "format_on_save": "on",
   "diff_view_style": "unified",
   "title_bar": {
     "show_sign_in": false,
@@ -58,8 +62,8 @@
     "show_branch_name": false
   },
   "status_bar": {
-    "cursor_position_button": true,
     "experimental.show": true,
+    "cursor_position_button": true,
     "line_endings_button": false,
     "active_encoding_button": "disabled",
     "active_language_button": false
@@ -76,6 +80,7 @@
   },
   "tabs": {
     "show_close_button": "hidden",
+    "activate_on_close": "left_neighbour",
     "git_status": false,
     "file_icons": false
   },
@@ -86,7 +91,8 @@
     "dock": "left",
     "button": false,
     "scrollbar": {
-      "horizontal_scroll": false
+      "horizontal_scroll": false,
+      "show": "never"
     },
     "default_width": 360.0,
     "sort_mode": "directories_first",
@@ -103,6 +109,9 @@
     "button": false
   },
   "git_panel": {
+    "dock": "left",
+    "default_width": 480,
+    "tree_view": true,
     "button": false
   },
   "search": {
@@ -118,20 +127,24 @@
     "button": false
   },
   "agent": {
-    "button": false,
+    "sidebar_side": "left",
+    "button": false
   },
   "terminal": {
     "button": false,
     "blinking": "on",
     "cursor_shape": "bar",
-    "font_family": "JetBrains Mono",
-    "font_size": 18,
-    "font_weight": 600
+    "font_weight": 600,
+    "font_family": "JetBrainsMono NFM",
+    "font_size": 18
   },
   "edit_predictions": {
     "provider": "zed"
   },
-  "show_edit_predictions": true,
+  "prettier": {
+    "enable": false
+  },
+  "show_edit_predictions": false,
   "auto_signature_help": false,
   "inline_code_actions": false,
   "completions": {
@@ -145,17 +158,12 @@
       "enabled": false
     }
   },
-  "file_scan_exclusions": [
-    ".git",
-    "tsconfig.tsbuildinfo",
-    "bun.lock",
-    "pnpm-lock.yaml"
-  ],
+  "file_scan_exclusions": [".git", "bun.lock", "pnpm-lock.yaml"],
   "telemetry": {
     "diagnostics": false,
     "metrics": false
   },
   "close_on_file_delete": true,
   "confirm_quit": false,
-  "when_closing_with_no_tabs": "keep_window_open",
+  "when_closing_with_no_tabs": "keep_window_open"
 }

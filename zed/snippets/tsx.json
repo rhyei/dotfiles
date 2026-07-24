@@ -1,9 +1,9 @@
 {
   "import css module": {
     "prefix": "icss",
-    "body": ["import styles from './$1.module.css'"],
+    "body": ["import styles from './$1.module.css'"]
   },
-  "react functional component": {
+  "React Functional Component": {
     "prefix": "rfc",
     "body": [
       "export function $1() {",
@@ -13,7 +13,7 @@
       "    </div>",
       "  )",
       "}"
-    ],
+    ]
   },
   "React Functional Component with Props": {
     "prefix": "rfcp",
@@ -29,6 +29,6 @@
       "    </div>",
       "  )",
       "}"
-    ],
+    ]
   }
 }

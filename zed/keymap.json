@@ -97,5 +97,195 @@
     "unbind": {
       "ctrl-enter": "assistant::InlineAssist"
     }
+  },
+  {
+    "context": "Editor && mode == full",
+    "unbind": {
+      "alt-enter": "editor::OpenSelectionsInMultibuffer"
+    }
+  },
+  {
+    "context": "OutlinePanel && not_editing",
+    "unbind": {
+      "alt-enter": "editor::OpenExcerpts"
+    }
+  },
+  {
+    "context": "!AcpThread > Editor && mode == full",
+    "unbind": {
+      "alt-enter": "editor::OpenExcerpts"
+    }
+  },
+  {
+    "context": "AcpThread > Editor && mode == full",
+    "unbind": {
+      "alt-enter": "editor::OpenExcerpts"
+    }
+  },
+  {
+    "context": "AgentFeedbackMessageEditor > Editor",
+    "unbind": {
+      "alt-enter": "editor::Newline"
+    }
+  },
+  {
+    "context": "DebugConsole > Editor",
+    "unbind": {
+      "alt-enter": "console::WatchExpression"
+    }
+  },
+  {
+    "context": "CollabPanel",
+    "unbind": {
+      "alt-enter": "collab_panel::OpenSelectedChannelNotes"
+    }
+  },
+  {
+    "context": "KeymapEditor",
+    "unbind": {
+      "alt-enter": "keymap_editor::CreateBinding"
+    }
+  },
+  {
+    "context": "GitPanel && ChangesList && !GitBranchSelector",
+    "unbind": {
+      "alt-enter": "menu::SecondaryConfirm"
+    }
+  },
+  {
+    "unbind": {
+      "alt-enter": [
+        "picker::ConfirmInput",
+        {
+          "secondary": false
+        }
+      ]
+    }
+  },
+  {
+    "context": "BufferSearchBar",
+    "unbind": {
+      "alt-enter": "search::SelectAllMatches"
+    }
+  },
+  {
+    "context": "VariableList",
+    "unbind": {
+      "alt-enter": "variable_list::AddWatch"
+    }
+  },
+  {
+    "context": "Pane",
+    "unbind": {
+      "alt-enter": "search::SelectAllMatches"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "ctrl-alt-t": [
+        "pane::CloseOtherItems",
+        {
+          "close_pinned": false
+        }
+      ]
+    }
+  },
+  {
+    "context": "Pane",
+    "unbind": {
+      "ctrl-alt-shift-t": [
+        "pane::CloseOtherItems",
+        {
+          "close_pinned": false
+        }
+      ]
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-alt-shift-l": "editor::CopyFileLocation"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-w": "pane::CloseActiveItem"
+    }
+  },
+  {
+    "context": "ThreadsSidebar",
+    "unbind": {
+      "ctrl-g": "agents_sidebar::ToggleThreadHistory"
+    }
+  },
+  {
+    "context": "Editor && mode == full",
+    "bindings": {
+      "ctrl-r": "go_to_line::Toggle"
+    }
+  },
+  {
+    "context": "Editor && mode == full",
+    "unbind": {
+      "ctrl-g": "go_to_line::Toggle"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-shift-r": "projects::OpenRecent"
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-r": "projects::OpenRecent"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-shift-g": "git_panel::Toggle"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-g": "git_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-shift-g": "git_panel::ToggleFocus"
+    }
+  },
+
+  // {
+  //   "bindings": {
+  //     "ctrl-`": "terminal_panel::ToggleFocus",
+  //     "ctrl-shift-`": "terminal_panel::Toggle"
+  //   }
+  // },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-shift-`": "terminal_panel::Toggle",
+      "ctrl-w": "pane::CloseActiveItem"
+    }
+  },
+  // {
+  //   "context": "Workspace",
+  //   "unbind": {
+  //     "ctrl-`": "terminal_panel::Toggle",
+  //     "ctrl-shift-`": "workspace::NewTerminal"
+  //   }
+  // },
+  //
+  {
+    "context": "Editor && multibuffer",
+    "bindings": {
+      "alt-enter": "editor::OpenExcerpts"
+    }
   }
 ]

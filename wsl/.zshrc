@@ -30,5 +30,8 @@ alias gp='git push'
 alias gcm='git commit -m'
 alias gd='git diff HEAD'
 alias e='eza'
+alias et="tree -L 2 -I 'node_modules|.next|.tanstack' -C"
 alias ls='eza'
-alias z="zed"
+alias z='zed'
+
+alias pvrp='pnpm version -r patch --no-git-checks'
